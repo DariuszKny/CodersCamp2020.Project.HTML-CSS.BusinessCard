@@ -1,3 +1,102 @@
+
+/* Variables */
+:root {
+    --backgroundMain: #2b2b3a;
+    --backgroundSecondary: #254558;
+    --colorMain: #1ed2f4;
+    --colorBox: rgba(244, 245, 246, 0.4);
+}
+
+/* https://themes.3rdwavemedia.com/demo/developer/# */
+
+/* Utilities*/
+
+
+body {
+    height: 100vh;
+    background: var(--backgroundMain);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.row div {
+    margin: 10px 0 10px 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: wheat;
+}
+
+
+
+/* HEADER SECTION */
+
+header {
+    background: var(--backgroundSecondary);
+}
+
+header .content {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 20px;
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    border: 2px solid #1ed2f4;
+}
+
+header img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+header button {
+    align-self: center;
+}
+header ul {
+    margin-top: 20px ;
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    font-size: 2rem;
+    margin: 10px 10px;
+}
+
+header ul li:hover {
+    color: yellow;
+}
+
+/* Main Section */
+
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 2rem;
+    height: 80vh;
+}
+
+.box {
+    background: var(--colorBox);
+    border: 5px solid var(--colorMain);
+    border-radius: 10px;
+    filter: blur(20%);
+    padding: 10px;
+}
+
 .wrong {
     color: red;
 }

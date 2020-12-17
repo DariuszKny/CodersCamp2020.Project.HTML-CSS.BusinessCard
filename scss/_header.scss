@@ -1,0 +1,51 @@
+@import 'variables.scss';
+
+.header {
+    background: $backgroundSecondary;
+    color: white;
+
+    .content {
+        max-width: $maxWidth;
+        margin: auto;
+        padding: 10px 20px;
+        align-content: center;
+        justify-content: space-between;
+        display: flex;
+
+        img {
+                width: 180px;
+                border-radius: 50%;
+            }
+
+            button {
+                align-self: center;
+            }
+
+            ul {
+                margin-top: 10px ;
+                list-style: none;
+                display: flex;
+
+                li {
+                    font-size: 2rem;
+                    margin: 5px 10px;
+
+                    &:hover {
+                     color: $buttonSecondary;
+                    }
+
+                }
+            }
+
+            .row div {
+             align-self: center;
+             margin-left: 20px;
+            }
+    }
+
+
+
+}
+
+
+

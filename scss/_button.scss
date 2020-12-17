@@ -1,0 +1,46 @@
+@import "variables";
+
+button {
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+.btn-main {
+  background: linear-gradient(90deg, $buttonMain, white, $buttonMain) 0 0;
+  background-size: 150%;
+  color: black;
+  animation: slideOut 0.2s ease-in-out  forwards ;
+}
+.btn-secondary {
+  background: linear-gradient(90deg, #9b870C, white, #9b870C) 0 0;
+  background-size: 150% ;
+  color: black;
+  animation: slideOut 0.2s ease-in-out  forwards ;
+}
+.btn-secondary:hover, .btn-main:hover {
+  background-position: 100% 0;
+  animation: slideIn 0.8s ease-in-out  forwards ;
+}
+@keyframes slideIn {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@keyframes slideOut {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

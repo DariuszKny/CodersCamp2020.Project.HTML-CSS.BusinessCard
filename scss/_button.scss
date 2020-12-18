@@ -13,32 +13,34 @@ button {
 
 
 .btn-main {
-  background: linear-gradient(90deg, $buttonMain, white, $buttonMain) 0 0;
-  background-size: 150%;
+  background: linear-gradient(90deg, $buttonMain, darkgray, $buttonMain) 0 0;
+  background-size: 180%;
   color: black;
   animation: slideOut 0.2s ease-in-out  forwards ;
 }
 .btn-secondary {
-  background: linear-gradient(90deg, #9b870C, white, #9b870C) 0 0;
-  background-size: 150% ;
+  background: linear-gradient(90deg, #B73225, #B73225 ,white, #B73225) 0 0;
+  background-size: 180% ;
   color: black;
-  animation: slideOut 0.2s ease-in-out  forwards ;
+  border: 1px solid #B73225;
+  animation: slideOut 0.1s ease-in-out  forwards ;
 }
 .btn-secondary:hover, .btn-main:hover {
-  background-position: 100% 0;
-  animation: slideIn 0.8s ease-in-out  forwards ;
+  background-position: 140% 0;
+
+  animation: slideIn 0.5s ease-in-out  forwards ;
 }
 @keyframes slideIn {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: 100% 0;
+    background-position: 150% 0;
   }
 }
 @keyframes slideOut {
   0% {
-    background-position: 100% 0;
+    background-position: 150% 0;
   }
   100% {
     background-position: 0 0;

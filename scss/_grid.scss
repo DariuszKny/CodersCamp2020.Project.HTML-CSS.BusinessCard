@@ -1,7 +1,7 @@
 @import 'variables';
 
-.container {
-  max-width: $maxWidth;
+.gridContainer {
+  max-width: $largeScreen;
   margin: 20px auto;
   padding: 10px 20px;
   color: black;
@@ -9,10 +9,25 @@
   grid-template-columns: 3fr 2fr;
   grid-gap: 2rem;
 
-  .box {
-    background: $boxColor;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 1.5rem;
+  @media screen and (max-width: $phoneScreen) {
+    margin: 0 auto;
+    grid-template-columns: 1fr
+  }
+  @media screen and (min-width: $phoneScreen) and (max-width: $tabletScreen) {
+    margin: 0 auto;
+    grid-template-columns: 1fr
+  }
+  @media screen and (min-width: $tabletScreen) and (max-width: $smallScreen) {
+    grid-gap: 0.5rem;
   }
 }
+
+.gridBox {
+  background: $boxColor;
+  border-radius: 10px;
+  border: 2px solid #dce1e3;
+  padding: 10px;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+

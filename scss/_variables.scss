@@ -1,7 +1,15 @@
 
-  $backgroundMain: #2b2b3a;
-  $backgroundSecondary: #254558;
+
+ /*Colors */
+  $backgroundMain: #dce1e3;
+  $backgroundSecondary:  #004E7C;
   $boxColor: #f4f6f6;
   $buttonMain: #1ed2f4;
   $buttonSecondary: #eafc40;
-  $maxWidth: 1300px;
+
+
+  /*Breakpoints*/
+  $largeScreen: 1200px;
+  $smallScreen: 1024px;
+  $tabletScreen: 768px;
+  $phoneScreen: 480px;

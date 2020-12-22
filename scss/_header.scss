@@ -27,7 +27,7 @@
 
     &__button {
          align-self: center;
-
+         background: $backgroundMain;
          i{margin-right: 2rem}
 
         &--small {
@@ -44,7 +44,7 @@
     }
 
     &__button:hover {
-    background: red;
+    background: $buttonSecondary;
 
 
     }
@@ -60,12 +60,20 @@
         list-style: none;
          display: flex;
 
-            li {
+            li, a {
              font-size: 2rem;
              margin: 5px 10px;
+
+
                  &:hover {
-                 color: red;
+                 color: $buttonSecondary;
                  }
+
+                 &:visited {
+                 color: inherit;
+                 }
+
+
              }
      }
 

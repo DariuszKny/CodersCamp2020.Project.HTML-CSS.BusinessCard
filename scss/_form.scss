@@ -1,0 +1,66 @@
+@import "variables";
+
+.contact {
+  max-width: $smallScreen;
+  margin: 0 auto 2rem auto;
+  padding: 2rem 2rem;
+  background: $backgroundSecondary;
+  color: $backgroundMain;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  h2 {
+    min-width: 100%;
+    font-size: 2rem;
+    border-bottom: 2px solid $backgroundMain;
+    grid-area: topic;
+  }
+
+  .form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+            'name email'
+            'message message'
+            'submit submit';
+    grid-gap: 1.2rem;
+    justify-content: normal;
+
+    &__name {
+      grid-area: name;
+
+      input {
+        width: 100%;
+        border-radius: 10px;
+        padding: 0.5rem;
+      }
+    }
+
+    &__email{
+      grid-area: email;
+
+      input {
+        width: 100%;
+        border-radius: 10px;
+        padding: 0.5rem;
+      }
+    }
+
+    &__textarea{
+      grid-area: message;
+
+      textarea {
+        width: 100%;
+        resize: vertical;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+    }
+
+    &__submit {
+      grid-area: submit;
+    }
+  }
+
+
+}

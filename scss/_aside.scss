@@ -1,5 +1,61 @@
 
 
 aside .gridBox {
-  height: 400px;
+}
+
+aside {
+  font-size: 1.2rem;
+
+  .findMe {
+    li {
+      margin-top: 10px;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .technologies {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 5px;
+
+     li {
+       display: inline-block;
+       background-color: $backgroundSecondary;
+       color: $backgroundMain;
+       padding: 1rem;
+       border-radius: 10px;
+       align-content: center;
+       text-align: center;
+
+       &:hover {
+         background-color: $buttonSecondary;
+         color: black;
+       }
+     }
+
+    @media screen and (max-width: $smallScreen){
+      grid-template-columns: repeat(2, 49%);
+    }
+  }
+
+  .education {
+    margin-top: 1rem;
+
+    li {
+      margin-top: 1rem;
+    }
+
+  }
+
+
+  .hobbies, .languages {
+    margin-top: 1rem;
+    li {
+      margin-top: 5px;
+    }
+  }
 }

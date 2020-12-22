@@ -19,7 +19,7 @@ button {
   animation: slideOut 0.2s ease-in-out  forwards ;
 }
 .btn-secondary {
-  background: linear-gradient(90deg, #B73225, #B73225 ,white, #B73225) 0 0;
+  background: linear-gradient(90deg, $buttonSecondary, $buttonSecondary ,white, $buttonSecondary) 0 0;
   background-size: 180% ;
   color: black;
   border: 1px solid #B73225;

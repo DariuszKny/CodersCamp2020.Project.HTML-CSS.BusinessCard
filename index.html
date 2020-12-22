@@ -17,8 +17,10 @@
 <body>
 
 <header class="header">
-   <button class="btn btn--main header__button--small"><i
-          class="fa fa-comments" aria-hidden="true"></i></button>
+   <a href="#contact_me">
+      <button class="btn btn--main header__button--small"><i
+             class="fa fa-comments" aria-hidden="true"></i></button>
+   </a>
    <div class="header__content">
       <div class="header__info">
          <img class="header__img" src="img/photo1.jpg" alt="Dariusz Knysak">
@@ -26,16 +28,21 @@
             <h1>Dariusz Knysak</h1>
             <h2>Fullstack Web Developer</h2>
             <ul>
-               <li><i class="fa fa-car"></i></li>
-               <li><i class="fa fa-car"></i></li>
-               <li><i class="fa fa-car"></i></li>
-               <li><i class="fa fa-car"></i></li>
+               <li><a
+                      href="https://www.linkedin.com/in/dariusz-knysak-b39468155/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/DariuszKny" target="_blank"><i
+                      class="fa fa-github"></i></a></li>
+               <li><a href="https://www.facebook.com/darek.knysak/" target="_blank"><i
+                      class="fa fa-facebook-official"></i></a></li>
             </ul>
          </div>
 
       </div>
-      <button class="btn btn--main header__button"><i class="fa fa-comments" aria-hidden="true"></i><span>Contact
+      <a href="#contact_me">
+         <button class="btn btn--main header__button"><i
+                class="fa fa-comments" aria-hidden="true"></i><span>Contact
          Me</span></button>
+      </a>
    </div>
 </header>
 
@@ -43,54 +50,100 @@
 <div class="gridContainer">
    <main>
       <div class="gridBox">
-         <p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją
-            zabawę!</p>
-          <button class="btn btn-secondary">Click ME!</button>
+         <h2>About Me</h2>
+
       </div>
 
       <div class="gridBox">
-         <p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją
-            zabawę!</p>
+         <h2>Recent Project</h2>
       </div>
 
       <div class="gridBox">
-         <p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją
-            zabawę!</p>
+         <h2>All Projects</h2>
       </div>
 
    </main>
    <aside>
 
       <div class="gridBox">
-         <p>Git commands work! - initial commit</p>
-         <p><span class="wrong">Css Works</span></p>
+         <ul class="findMe">
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Poland, Wrocław
+            </li>
+            <li><i class="fa fa-envelope-o"
+                   aria-hidden="true"></i>dariusz.knysak@mail.com</li>
+            <li><i class="fa fa-link"
+                   aria-hidden="true"></i><a href="https://gifted-varahamihira-0e9707.netlify.app/">https://gifted-varahamihira-0e9707.netlify.app/</a></li>
+         </ul>
+
       </div>
 
       <div class="gridBox">
-         <p>Git commands work! - initial commit</p>
-         <p><span class="wrong">Css Works</span></p>
+         <h3>Technologies</h3>
+         <ul class="technologies">
+            <li><p>Java</p></li>
+            <li>Spring</li>
+            <li>Hibernate</li>
+            <li>MySql</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+         </ul>
       </div>
 
       <div class="gridBox">
-         <p>Git commands work! - initial commit</p>
-         <p><span class="wrong">Css Works</span></p>
+         <h3>Education</h3>
+         <ul class="education">
+            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+               University of Economics in Wrocław
+               <div>Master Degree in Management 2016-2018</div>
+            </li>
+            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+               University of Economics in Wrocław
+               <div>Bachelor Degree in Economics 2013-2016</div>
+            </li>
+
+         </ul>
       </div>
 
       <div class="gridBox">
-         <p>Git commands work! - initial commit</p>
-         <p><span class="wrong">Css Works</span></p>
+         <h3>Languages</h3>
+         <ul class="languages">
+            <li>Polish: Native</li>
+            <li>English: Advanced</li>
+            <li>German: Beginner</li>
+         </ul>
+      </div>
+
+      <div class="gridBox">
+         <h3>Hobbies</h3>
+         <ul class="hobbies">
+            <li>Football</li>
+            <li>Mountain Climbing</li>
+            <li>Computers Building</li>
+            <li>Dogs Training</li>
+         </ul>
       </div>
    </aside>
 </div>
 
-<div class="contact">
-   <form name="contact"  method="POST" data-netlify="true">
-      <label>Name<input type="text" name="name"></label>
-      <label>Mail<input type="email" name="email"></label>
-      <label>Message
-         <textarea name="message" cols="30" rows="10"></textarea></label>
+<div class="contact" id="contact_me">
+   <h2> Contact Me </h2>
+   <form class="form" name="contact" method="POST" data-netlify="true">
 
-     <button type="submit">Send</button>
+      <label class="form__name"><input type="text" name="name"
+                                           placeholder="Insert Your Name"
+                                              required></label>
+      <label class="form__email"><input type="email" name="email"
+                                            placeholder="Insert Your Email"
+                                               required></label>
+      <label class="form__textarea">
+         <textarea name="message" cols="30" rows="10"
+                   placeholder="Insert Your Message ..."
+                   onresize="false"
+                   required></textarea></label>
+
+      <button class="form__submit" type="submit">Submit</button>
    </form>
 </div>
 

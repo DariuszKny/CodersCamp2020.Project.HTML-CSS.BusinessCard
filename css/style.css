@@ -23,6 +23,7 @@
 }
 .header__button {
   align-self: center;
+  background: #dce1e3;
 }
 .header__button i {
   margin-right: 2rem;
@@ -38,7 +39,7 @@
   content: "";
 }
 .header__button:hover {
-  background: red;
+  background: #FFDC00;
 }
 .header__inside {
   align-self: center;
@@ -49,12 +50,15 @@
   list-style: none;
   display: flex;
 }
-.header ul li {
+.header ul li, .header ul a {
   font-size: 2rem;
   margin: 5px 10px;
 }
-.header ul li:hover {
-  color: red;
+.header ul li:hover, .header ul a:hover {
+  color: #FFDC00;
+}
+.header ul li:visited, .header ul a:visited {
+  color: inherit;
 }
 @media screen and (max-width: 768px) {
   .header__content {
@@ -75,8 +79,50 @@
   }
 }
 
-aside .gridBox {
-  height: 400px;
+aside {
+  font-size: 1.2rem;
+}
+aside .findMe li {
+  margin-top: 10px;
+}
+aside .findMe li i {
+  margin-right: 10px;
+}
+aside .technologies {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-gap: 5px;
+}
+aside .technologies li {
+  display: inline-block;
+  background-color: #004E7C;
+  color: #dce1e3;
+  padding: 1rem;
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+}
+aside .technologies li:hover {
+  background-color: #FFDC00;
+  color: black;
+}
+@media screen and (max-width: 1024px) {
+  aside .technologies {
+    grid-template-columns: repeat(2, 49%);
+  }
+}
+aside .education {
+  margin-top: 1rem;
+}
+aside .education li {
+  margin-top: 1rem;
+}
+aside .hobbies, aside .languages {
+  margin-top: 1rem;
+}
+aside .hobbies li, aside .languages li {
+  margin-top: 5px;
 }
 
 /*Colors */
@@ -93,14 +139,14 @@ button {
 }
 
 .btn-main {
-  background: linear-gradient(90deg, #1ed2f4, darkgray, #1ed2f4) 0 0;
+  background: linear-gradient(90deg, red, darkgray, red) 0 0;
   background-size: 180%;
   color: black;
   animation: slideOut 0.2s ease-in-out forwards;
 }
 
 .btn-secondary {
-  background: linear-gradient(90deg, #B73225, #B73225, white, #B73225) 0 0;
+  background: linear-gradient(90deg, #FFDC00, #FFDC00, white, #FFDC00) 0 0;
   background-size: 180%;
   color: black;
   border: 1px solid #B73225;
@@ -149,6 +195,17 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
 h1, h2, h3 {
   margin-top: 1rem;
 }
@@ -190,7 +247,7 @@ h1, h2, h3 {
   background: #f4f6f6;
   border-radius: 10px;
   border: 2px solid #dce1e3;
-  padding: 10px;
+  padding: 1rem 1.5rem;
   margin-top: 1.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -199,6 +256,59 @@ h1, h2, h3 {
 /*Breakpoints*/
 main .gridBox {
   height: 800px;
+}
+
+/*Colors */
+/*Breakpoints*/
+.contact {
+  max-width: 1024px;
+  margin: 0 auto 2rem auto;
+  padding: 2rem 2rem;
+  background: #004E7C;
+  color: #dce1e3;
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.contact h2 {
+  min-width: 100%;
+  font-size: 2rem;
+  border-bottom: 2px solid #dce1e3;
+  grid-area: topic;
+}
+.contact .form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: "name email" "message message" "submit submit";
+  grid-gap: 1.2rem;
+  justify-content: normal;
+}
+.contact .form__name {
+  grid-area: name;
+}
+.contact .form__name input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.contact .form__email {
+  grid-area: email;
+}
+.contact .form__email input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.contact .form__textarea {
+  grid-area: message;
+}
+.contact .form__textarea textarea {
+  width: 100%;
+  resize: vertical;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.contact .form__submit {
+  grid-area: submit;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,2 +1,3 @@
 # CodersCamp 2020 - Projekt HTML & CSS
- LIVE: https://dariuszkny.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
+ LIVE GITHUB: https://dariuszkny.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
+ LIVE NETLIFY WITH WORIKNG FORM: https://gifted-varahamihira-0e9707.netlify.app/

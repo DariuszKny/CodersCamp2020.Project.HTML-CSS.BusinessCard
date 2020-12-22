@@ -9,11 +9,12 @@ button {
   cursor: pointer;
   border-radius: 10px;
   display: inline-block;
+  outline: none;
 }
 
 
 .btn-main {
-  background: linear-gradient(90deg, $buttonMain, darkgray, $buttonMain) 0 0;
+  background: linear-gradient(90deg, $buttonMain, $buttonMain, white, $buttonMain) 0 0;
   background-size: 180%;
   color: black;
   animation: slideOut 0.2s ease-in-out  forwards ;
@@ -22,7 +23,6 @@ button {
   background: linear-gradient(90deg, $buttonSecondary, $buttonSecondary ,white, $buttonSecondary) 0 0;
   background-size: 180% ;
   color: black;
-  border: 1px solid #B73225;
   animation: slideOut 0.1s ease-in-out  forwards ;
 }
 .btn-secondary:hover, .btn-main:hover {

@@ -26,6 +26,14 @@
     grid-gap: 1.2rem;
     justify-content: normal;
 
+    @media screen and (max-width: $tabletScreen) {
+      grid-template-areas:
+              'name name'
+              'email email'
+              'message message'
+              'submit submit';
+    }
+
     &__name {
       grid-area: name;
 
@@ -59,6 +67,10 @@
 
     &__submit {
       grid-area: submit;
+
+      &:hover {
+        background-color: $backgroundMain;
+      }
     }
   }
 

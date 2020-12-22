@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*Colors */
 /*Breakpoints*/
 .header {
@@ -136,10 +137,11 @@ button {
   cursor: pointer;
   border-radius: 10px;
   display: inline-block;
+  outline: none;
 }
 
 .btn-main {
-  background: linear-gradient(90deg, red, darkgray, red) 0 0;
+  background: linear-gradient(90deg, red, red, white, red) 0 0;
   background-size: 180%;
   color: black;
   animation: slideOut 0.2s ease-in-out forwards;
@@ -149,7 +151,6 @@ button {
   background: linear-gradient(90deg, #FFDC00, #FFDC00, white, #FFDC00) 0 0;
   background-size: 180%;
   color: black;
-  border: 1px solid #B73225;
   animation: slideOut 0.1s ease-in-out forwards;
 }
 
@@ -178,7 +179,7 @@ button {
 /*Breakpoints*/
 .footer {
   background: #004E7C;
-  color: yellow;
+  color: #FFDC00;
   padding: 1rem;
   text-align: center;
 }
@@ -187,6 +188,7 @@ button {
 /*Breakpoints*/
 body {
   background: #dce1e3;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -254,8 +256,91 @@ h1, h2, h3 {
 
 /*Colors */
 /*Breakpoints*/
-main .gridBox {
-  height: 800px;
+main {
+  text-align: justify;
+}
+main .aboutMe {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .aboutMe button {
+  margin-top: 1rem;
+  align-content: center;
+}
+main .recent_project {
+  margin-top: 1rem;
+  text-align: justify;
+}
+main .recent_project__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+main .recent_project h3 {
+  text-align: center;
+}
+main .recent_project__buttons {
+  display: flex;
+  justify-content: center;
+}
+main .recent_project__buttons button {
+  margin: 1rem;
+}
+main .recent_project__techs {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+main .recent_project__techs li {
+  margin: 5px 10px;
+  padding: 5px;
+  background: #FFDC00;
+}
+main .projects {
+  margin-top: 1rem;
+}
+main .projects__container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 1rem;
+  border-bottom: 1px solid #004E7C;
+}
+@media screen and (max-width: 480px) {
+  main .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+main .projects__container:nth-last-child(1) {
+  border-bottom: none;
+}
+main .projects__container__img {
+  width: 100%;
+  height: auto;
+}
+main .projects__container .techs {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  text-align: center;
+}
+main .projects__container .techs li {
+  margin: 5px 10px;
+  background: #FFDC00;
+}
+main .projects__container__content h4 {
+  margin-bottom: 1rem;
+}
+main .projects__container__content button {
+  margin: 1rem auto;
 }
 
 /*Colors */
@@ -281,6 +366,11 @@ main .gridBox {
   grid-template-areas: "name email" "message message" "submit submit";
   grid-gap: 1.2rem;
   justify-content: normal;
+}
+@media screen and (max-width: 768px) {
+  .contact .form {
+    grid-template-areas: "name name" "email email" "message message" "submit submit";
+  }
 }
 .contact .form__name {
   grid-area: name;
@@ -309,6 +399,9 @@ main .gridBox {
 }
 .contact .form__submit {
   grid-area: submit;
+}
+.contact .form__submit:hover {
+  background-color: #dce1e3;
 }
 
 /*# sourceMappingURL=style.css.map */

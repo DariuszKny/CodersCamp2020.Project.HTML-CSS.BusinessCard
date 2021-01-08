@@ -69,7 +69,9 @@
                  color: $buttonSecondary;
                  }
 
-                 &:visited {
+
+
+                 &:visited, &:link {
                  color: inherit;
                  }
 

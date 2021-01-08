@@ -58,7 +58,7 @@
 .header ul li:hover, .header ul a:hover {
   color: #FFDC00;
 }
-.header ul li:visited, .header ul a:visited {
+.header ul li:visited, .header ul li:link, .header ul a:visited, .header ul a:link {
   color: inherit;
 }
 @media screen and (max-width: 768px) {
